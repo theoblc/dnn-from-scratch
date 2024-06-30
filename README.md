@@ -122,7 +122,7 @@ Dans cette section nous nous concentrerons principalement sur le test du Deep Ne
 Avant de commencer à exploiter la base de données MNIST, il faut binariser les images qui sont en niveaux de gris. La binarisation est nécessaire car nous avons construit nos modèles RBM et DBN de sorte qu’ils s’entraînent et qu’ils génèrent des images binaires. La figure 8 détaille cette binarisation qui sera faite systématiquement sur les données.
 
 <figure>
-  <img src="imgs/dbn_fig1.png" alt="Image description">
+  <img src="imgs/dnn_binarization.png" alt="Image description">
   <figcaption><strong>Figure 8</strong> - Illustration de la binarisation des images. Sur la ligne du haut, ce sont les caractères ‘5’, ‘0’, ‘4’ et ‘1’ en niveaux de gris. Sur la ligne du bas, ce sont les caractères ‘5’, ‘0’, ‘4’ et ‘1’ binarisés avec un seuil égal à 128 (le pixel vaut 1 s’il est supérieur strict à 128).</figcaption>
 </figure>
 Dans notre étude du DNN, il nous est demandé d’analyser et de comparer le modèle classique du modèle pré-entraîné sous trois scopes : nombre de couches, nombre de neurones par couche et nombre de données d’entraînement. Les paramètres suivants sont fixés : <code>lr = 0.1</code>, <code>batch_size = 5</code>, <code>epochs_RBM = 100</code> et <code>epochs_retropropagation = 200</code>.
